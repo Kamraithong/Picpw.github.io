@@ -1,0 +1,416 @@
+/* ==========================================
+   🎀 KUNNOO PINK PORTFOLIO
+   ธีมชมพูหวาน ลูกคุณหนู น่ารัก
+   ========================================== */
+
+
+/* ---------- พื้นฐานเว็บไซต์ ---------- */
+
+body {
+    font-family: "Noto Serif Thai", "TH Sarabun New", Georgia, serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.9;
+
+    color: #65434f;
+
+    background:
+        radial-gradient(circle at 15% 10%, #ffdce9 0, transparent 22%),
+        radial-gradient(circle at 85% 15%, #ffe9f1 0, transparent 25%),
+        radial-gradient(circle at 50% 100%, #fff0f6 0, transparent 35%),
+        linear-gradient(135deg, #fff8fb, #ffeef5);
+
+    min-height: 100vh;
+}
+
+
+/* ---------- ส่วนหัวเว็บไซต์ ---------- */
+
+header {
+    position: relative;
+
+    padding: 60px 25px 55px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f7a9c4,
+            #f9bfd3,
+            #ffd6e4
+        );
+
+    color: #ffffff;
+
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+
+    box-shadow:
+        0 10px 30px rgba(220, 120, 155, 0.25);
+}
+
+
+/* ลวดลายตกแต่งด้านบน */
+
+header::before {
+    content: "♡  ✿  ♡  ✿  ♡";
+
+    display: block;
+
+    margin-bottom: 12px;
+
+    font-size: 24px;
+
+    color: #fff8fb;
+
+    letter-spacing: 8px;
+}
+
+
+/* ลวดลายตกแต่งด้านล่าง */
+
+header::after {
+    content: "୨୧";
+
+    position: absolute;
+
+    bottom: 8px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-size: 30px;
+
+    color: #ffffff;
+}
+
+
+/* ชื่อ */
+
+header h1 {
+    margin: 0;
+
+    font-size: 40px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-shadow:
+        2px 3px 8px rgba(130, 70, 90, 0.18);
+}
+
+
+/* คำต้อนรับ */
+
+header p {
+    margin: 8px 0 0;
+
+    font-size: 20px;
+
+    color: #fff8fb;
+}
+
+
+/* ---------- กล่องเนื้อหา ---------- */
+
+section {
+    position: relative;
+
+    max-width: 880px;
+
+    margin: 35px auto;
+
+    padding: 32px;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    border: 1px solid #f4c6d7;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 8px 25px rgba(210, 115, 150, 0.14);
+
+    transition: 0.3s ease;
+}
+
+
+/* เอฟเฟกต์เมื่อเอาเมาส์วาง */
+
+section:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(210, 115, 150, 0.20);
+}
+
+
+/* เครื่องประดับมุม */
+
+section::before {
+    content: "♡";
+
+    position: absolute;
+
+    top: 15px;
+    right: 20px;
+
+    font-size: 25px;
+
+    color: #efa1bc;
+}
+
+
+/* ---------- หัวข้อ ---------- */
+
+h2 {
+    margin-top: 0;
+
+    padding-bottom: 10px;
+
+    color: #d66a91;
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    border-bottom: 2px solid #f5c2d5;
+
+    position: relative;
+}
+
+
+/* ตกแต่งหน้าหัวข้อ */
+
+h2::before {
+    content: "✿";
+
+    margin-right: 9px;
+
+    color: #ed91b1;
+}
+
+
+/* ---------- กล่องผลงาน ---------- */
+
+.project {
+    margin: 20px 0;
+
+    padding: 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff5f8,
+            #fffafd
+        );
+
+    border: 1px solid #f3c6d7;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 5px 15px rgba(215, 120, 155, 0.10);
+
+    transition: all 0.3s ease;
+}
+
+
+/* เอฟเฟกต์กล่องผลงาน */
+
+.project:hover {
+    transform: translateY(-6px) scale(1.01);
+
+    background: #fff0f6;
+
+    border-color: #e9a0ba;
+
+    box-shadow:
+        0 12px 22px rgba(210, 110, 150, 0.18);
+}
+
+
+/* ชื่อผลงาน */
+
+.project h3 {
+    margin-top: 0;
+
+    color: #c95780;
+
+    font-size: 22px;
+}
+
+
+/* ---------- รายการทักษะ ---------- */
+
+ul {
+    padding: 0;
+
+    margin: 0;
+
+    list-style: none;
+}
+
+
+li {
+    position: relative;
+
+    margin: 13px 0;
+
+    padding: 12px 18px 12px 48px;
+
+    background: #fff3f7;
+
+    border: 1px solid #f5d0dd;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 4px 10px rgba(210, 120, 150, 0.08);
+
+    transition: 0.25s ease;
+}
+
+
+/* ไอคอนหน้ารายการ */
+
+li::before {
+    content: "♡";
+
+    position: absolute;
+
+    left: 18px;
+    top: 8px;
+
+    font-size: 22px;
+
+    color: #e487a8;
+}
+
+
+/* เอฟเฟกต์รายการ */
+
+li:hover {
+    transform: translateX(7px);
+
+    background: #ffe9f1;
+
+    border-color: #e9a2bb;
+}
+
+
+/* ---------- ส่วนท้าย ---------- */
+
+footer {
+    position: relative;
+
+    margin-top: 55px;
+
+    padding: 38px 20px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d8789b,
+            #e99ab5,
+            #f2b7cb
+        );
+
+    color: white;
+
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+
+    box-shadow:
+        0 -8px 25px rgba(210, 110, 145, 0.18);
+}
+
+
+/* หัวข้อ Footer */
+
+footer h2 {
+    color: white;
+
+    border: none;
+
+    margin-bottom: 12px;
+}
+
+
+footer h2::before {
+    content: "🎀";
+
+    margin-right: 8px;
+}
+
+
+/* อีเมล */
+
+footer a {
+    color: #fff7fa;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    border-bottom: 1px dotted white;
+
+    transition: 0.2s;
+}
+
+
+footer a:hover {
+    color: #ffe2ec;
+
+    border-bottom-color: #ffe2ec;
+}
+
+
+/* ---------- ปรับหน้าจอโทรศัพท์ ---------- */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 45px 18px 42px;
+
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
+    header h1 {
+        font-size: 29px;
+    }
+
+    header p {
+        font-size: 17px;
+    }
+
+    section {
+        margin: 22px 14px;
+
+        padding: 23px;
+
+        border-radius: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .project {
+        padding: 18px;
+    }
+
+    li {
+        padding-left: 43px;
+    }
+
+    footer {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+}
